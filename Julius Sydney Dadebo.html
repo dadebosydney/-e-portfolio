@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>julius sydney dadebo</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23111113'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='Inter, sans-serif' font-size='30' font-weight='700' fill='%23E8E8E6'%3ES%3C/text%3E%3C/svg%3E">
+<meta name="theme-color" content="#111113">
+<meta name="description" content="Julius Sydney Dadebo — IT professional moving into security operations. Monitoring, detection and incident response.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#111113;
+    --text:#E8E8E6;
+    --text-dim:#9B9B97;
+    --text-faint:#6B6B67;
+    --link:#8AB4F8;
+    --line:#26262A;
+    --ok:#7BC49A;
+    --sans:'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+  }
+
+  :root[data-theme="light"]{
+    --bg:#FFFFFF;
+    --text:#1A1A18;
+    --text-dim:#5F5F5B;
+    --text-faint:#8E8E8A;
+    --link:#2563C9;
+    --line:#E6E6E3;
+    --ok:#2F8F5B;
+  }
+
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+
+  body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:var(--sans);
+    font-size:16px;
+    line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+    transition:background-color .2s ease, color .2s ease;
+  }
+
+  .wrap{
+    max-width:640px;
+    margin:0 auto;
+    padding:56px 24px 96px;
+  }
+
+  a{color:var(--link);text-decoration:none;}
+  a:hover{text-decoration:underline;text-underline-offset:3px;}
+
+  /* nav */
+  nav{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    font-size:15px;
+    margin-bottom:56px;
+  }
+  nav a{color:var(--text-dim);}
+  nav a:hover{color:var(--text);text-decoration:none;}
+  .theme-toggle{
+    margin-left:auto;
+    background:none;
+    border:none;
+    color:var(--text-dim);
+    font-family:var(--sans);
+    font-size:15px;
+    cursor:pointer;
+    padding:0;
+  }
+  .theme-toggle:hover{color:var(--text);}
+
+  /* hero */
+  h1{
+    font-size:30px;
+    font-weight:700;
+    letter-spacing:-0.02em;
+    line-height:1.3;
+    margin-bottom:6px;
+  }
+  .tagline{color:var(--text-dim);margin-bottom:26px;}
+
+  .findme{color:var(--text-dim);font-size:15px;}
+  .findme span{margin-right:6px;}
+  .findme a{margin-right:14px;}
+
+  /* sections */
+  section{margin-top:52px;}
+  h2{
+    font-size:19px;
+    font-weight:600;
+    letter-spacing:-0.01em;
+    margin-bottom:18px;
+  }
+
+  p{color:var(--text-dim);margin-bottom:14px;}
+  p:last-child{margin-bottom:0;}
+  strong{color:var(--text);font-weight:600;}
+
+  /* projects */
+  .item{margin-bottom:30px;}
+  .item:last-child{margin-bottom:0;}
+  .item h3{font-size:16px;font-weight:600;margin-bottom:4px;}
+  .item p{margin-bottom:6px;}
+  .item .links a{font-size:15px;margin-right:14px;}
+
+  /* roadmap */
+  .roadmap-item{
+    display:flex;
+    align-items:baseline;
+    gap:12px;
+    padding:11px 0;
+    border-bottom:1px solid var(--line);
+  }
+  .roadmap-item:last-child{border-bottom:none;}
+  .roadmap-item .name{color:var(--text);font-weight:500;}
+  .roadmap-item .desc{color:var(--text-dim);font-size:15px;}
+  .roadmap-item .status{
+    margin-left:auto;
+    font-size:13px;
+    color:var(--text-faint);
+    white-space:nowrap;
+    flex-shrink:0;
+  }
+  .status.done{color:var(--ok);}
+  .status.active{color:var(--text);}
+
+  /* tooling */
+  .tooling{color:var(--text-dim);}
+  .tooling b{color:var(--text);font-weight:500;}
+
+  footer{
+    margin-top:64px;
+    padding-top:22px;
+    border-top:1px solid var(--line);
+    font-size:14px;
+    color:var(--text-faint);
+  }
+
+  @media (max-width:520px){
+    .wrap{padding:36px 20px 72px;}
+    h1{font-size:26px;}
+    .roadmap-item{flex-wrap:wrap;}
+    .roadmap-item .status{margin-left:0;}
+  }
+
+  :focus-visible{outline:2px solid var(--link);outline-offset:3px;border-radius:2px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <nav>
+    <a href="#about">about</a>
+    <a href="#projects">projects</a>
+    <a href="#roadmap">roadmap</a>
+    <a href="#tooling">tooling</a>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark mode">light</button>
+  </nav>
+
+  <header>
+    <h1>Julius Sydney Dadebo</h1>
+    <p class="tagline">building and securing software systems for the future</p>
+    <p class="findme">
+      <span>Find me on:</span>
+      <a href="https://github.com/dadebosydney" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/in/sjdadebo" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:julius.sydney@outlook.com">Email</a>
+    </p>
+  </header>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>I have a BSc in Information Technology, the Google Cybersecurity Certificate and CCNA. I spend a lot of time with hands-on labs — packet capture, intrusion detection, SIEM tooling.</p>
+    <p>I'm moving toward defense: monitoring, detection, and incident response. Outside of that, I play chess and work out casually.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="item">
+      <h3>NetSniffer</h3>
+      <p>Python-based network packet sniffer built with Scapy on Kali Linux, developed during a cybersecurity internship at CodeAlpha.</p>
+      <div class="links">
+        <a href="https://github.com/dadebosydney" target="_blank" rel="noopener">GitHub →</a>
+      </div>
+    </div>
+
+    <div class="item">
+      <h3>Phishing Awareness Training Module</h3>
+      <p>A training module on phishing recognition and prevention, built as part of the CodeAlpha internship.</p>
+      <div class="links">
+        <a href="https://github.com/dadebosydney" target="_blank" rel="noopener">GitHub →</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="roadmap">
+    <h2>Roadmap</h2>
+
+    <div class="roadmap-item">
+      <div>
+        <div class="name">Cisco CCNA</div>
+        <div class="desc">Networking fundamentals — the base layer for everything downstream in security.</div>
+      </div>
+      <div class="status done">done</div>
+    </div>
+
+    <div class="roadmap-item">
+      <div>
+        <div class="name">Google Cybersecurity Certificate</div>
+        <div class="desc">Foundations across security operations, tooling, and risk.</div>
+      </div>
+      <div class="status done">done</div>
+    </div>
+
+    <div class="roadmap-item">
+      <div>
+        <div class="name">SC-900 — Microsoft Security Fundamentals</div>
+        <div class="desc">Studying via Microsoft Learn, building toward the Microsoft security stack.</div>
+      </div>
+      <div class="status active">in progress</div>
+    </div>
+
+    <div class="roadmap-item">
+      <div>
+        <div class="name">SC-200 — Microsoft Security Operations Analyst</div>
+        <div class="desc">Sentinel and Defender — direct prep for SOC analyst work.</div>
+      </div>
+      <div class="status">queued</div>
+    </div>
+
+    <div class="roadmap-item">
+      <div>
+        <div class="name">CompTIA Security+</div>
+        <div class="desc">Broad industry-standard cert to round out the certification track.</div>
+      </div>
+      <div class="status">queued</div>
+    </div>
+  </section>
+
+  <section id="tooling">
+    <h2>Tooling</h2>
+    <p class="tooling">
+      <b>Packet analysis and recon:</b> Wireshark, Nmap.
+      <b>SIEM:</b> Splunk, Microsoft Sentinel.
+      <b>Endpoint and EDR:</b> Microsoft Defender, CrowdStrike.
+      <b>Intrusion detection:</b> Wazuh, Suricata.
+      <b>Labs:</b> TryHackMe, HackTheBox.
+    </p>
+  </section>
+
+  <footer>
+    © 2026 Julius Sydney Dadebo
+  </footer>
+
+</div>
+<script>
+  (function(){
+    var root = document.documentElement;
+    var btn = document.getElementById('themeToggle');
+
+    function applyTheme(theme){
+      if(theme === 'light'){
+        root.setAttribute('data-theme','light');
+        btn.textContent = 'dark';
+      } else {
+        root.removeAttribute('data-theme');
+        btn.textContent = 'light';
+      }
+    }
+
+    var saved = null;
+    try { saved = localStorage.getItem('theme'); } catch(e){}
+    var initial = saved || (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+    applyTheme(initial);
+
+    btn.addEventListener('click', function(){
+      var current = root.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
+      var next = current === 'light' ? 'dark' : 'light';
+      applyTheme(next);
+      try { localStorage.setItem('theme', next); } catch(e){}
+    });
+  })();
+</script>
+</body>
+</html>
